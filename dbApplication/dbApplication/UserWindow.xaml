@@ -1,0 +1,22 @@
+﻿<Window x:Class="dbApplication.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dbApplication"
+        mc:Ignorable="d"
+        Title="UserWindow" Height="600" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="175*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="CreateRecipeButton" Content="Create Recipe" HorizontalAlignment="Left" Margin="10,539,0,-290" VerticalAlignment="Top" Width="142" Grid.ColumnSpan="2"/>
+        <Button x:Name="findRecipeButton" Content="Find Recipe" HorizontalAlignment="Left" Margin="10,514,0,-265" VerticalAlignment="Top" Width="142" Grid.ColumnSpan="2"/>
+        <Button x:Name="friendsButton" Content="Friends" HorizontalAlignment="Left" Margin="10,489,0,-240" VerticalAlignment="Top" Width="142" Grid.ColumnSpan="2"/>
+        <Button x:Name="favoriteRecipesButton" Content="Favorite Recipies" HorizontalAlignment="Left" Margin="10,439,0,-190" VerticalAlignment="Top" Width="142" Grid.ColumnSpan="2"/>
+        <Button x:Name="mineRecipesButton" Content="Mine Recipes" HorizontalAlignment="Left" Margin="10,464,0,-215" VerticalAlignment="Top" Width="142" Grid.ColumnSpan="2"/>
+        <Button x:Name="profileButton" Content="Profile" HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top" Width="142" Click="profileButton_Click"/>
+
+    </Grid>
+</Window>

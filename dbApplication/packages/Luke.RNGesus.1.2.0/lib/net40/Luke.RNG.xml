@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Luke.RNG</name>
+    </assembly>
+    <members>
+        <member name="T:Luke.RNG.RNGesus">
+            <summary>
+            Secure pseudorandom value generator
+            </summary>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.#ctor">
+            <summary>
+            Secure pseudorandom value generator.
+            The parameterless constructor initialises RNGesus with up to 1024 byte operations supported. If you require outputs larger than 1024 bytes, consider using the overload.
+            </summary>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.#ctor(System.Int32)">
+            <summary>
+            Secure pseudorandom value generator.
+            <param name="sharedBufferSize">The maximum size of outputs you expect to need to generate. Larger buffer size will result in higher memory use.</param>
+            </summary>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateBool">
+            <summary>
+            Generates a cryptographically secure random boolean
+            </summary>
+            <returns>
+            A random boolean
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateInt">
+            <summary>
+            Generates a cryptographically secure unsigned 32-bit random integer
+            </summary>
+            <returns>
+            A random unsigned 32-bit random integer
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateInt(System.UInt32)">
+            <summary>
+            Generates a cryptographically secure unsigned 32-bit random integer equal to or below a provided maximum
+            </summary>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 32-bit random integer equal to or below the provided maximum
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateInt(System.Int32)">
+            <summary>
+            Generates a cryptographically secure unsigned 32-bit random integer equal to or below a provided maximum.
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 32-bit random integer equal to or below the provided maximum
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateInt(System.UInt32,System.UInt32)">
+            <summary>
+            Generates a cryptographically secure unsigned 32-bit random integer within a provided range
+            </summary>
+            <param name="minimum">The minimum value of the integer required</param>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 32-bit random integer within the provided range
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateInt(System.Int32,System.Int32)">
+            <summary>
+            Generates a cryptographically secure unsigned 32-bit random integer within a provided range
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="minimum">The minimum value of the integer required</param>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 32-bit random integer within the provided range
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateLong">
+            <summary>
+            Generates a cryptographically secure unsigned 64-bit random integer
+            </summary>
+            <returns>
+            A random unsigned 64-bit random integer
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateLong(System.UInt64)">
+            <summary>
+            Generates a cryptographically secure unsigned 64-bit random integer equal to or below a provided maximum
+            </summary>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 64-bit integer equal to or below the provided maximum
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateLong(System.Int64)">
+            <summary>
+            Generates a cryptographically secure unsigned 64-bit random integer equal to or below a provided maximum
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 64-bit integer equal to or below the provided maximum
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateLong(System.UInt64,System.UInt64)">
+            <summary>
+            Generates a cryptographically secure unsigned random 64-bit integer within a provided range
+            </summary>
+            <param name="minimum">The minimum value of the integer required</param>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 64-bit integer within the provided range
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateLong(System.Int64,System.Int64)">
+            <summary>
+            Generates a cryptographically secure unsigned random 64-bit integer within a provided range
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="minimum">The minimum value of the integer required</param>
+            <param name="maximum">The maximum value of the integer required</param>
+            <returns>
+            A random unsigned 64-bit integer within the provided range
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateFloat">
+            <summary>
+            Generates a cryptographically secure positive random 32-bit floating point number between 0 and 1
+            </summary>
+            <returns>
+            A random 32-bit positive floating point number between 0 and 1
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateDouble">
+            <summary>
+            Generates a cryptographically secure positive random 64-bit floating point number between 0 and 1
+            </summary>
+            <returns>
+            A random 64-bit positive floating point number between 0 and 1
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateByteArray(System.UInt32)">
+            <summary>
+            Generates a cryptographically secure random byte array
+            </summary>
+            <param name="length">The length of the byte array required</param>
+            <returns>
+            An array of random bytes
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateByteArray(System.Int32)">
+            <summary>
+            Generates a cryptographically secure random byte array
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="length">The length of the byte array required</param>
+            <returns>
+            An array of random bytes
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateString(System.UInt32)">
+            <summary>
+            Generates a cryptographically secure random string
+            </summary>
+            <param name="length">The length of the output required</param>
+            <returns>
+            A random string containing upper- and lower-case (ISO basic Latin) alphabetical letters, numbers, hyphens, and underscores of the requested length
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateString(System.Int32)">
+            <summary>
+            Generates a cryptographically secure random string
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="length">The length of the output required</param>
+            <returns>
+            A random string containing upper- and lower-case (ISO basic Latin) alphabetical letters, numbers, hyphens, and underscores of the requested length
+            </returns>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateString(System.UInt32,System.String,System.Boolean)">
+            <summary>
+            Generates a cryptographically secure random string
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="length">The length of the output required</param>
+            <param name="validCharacters">A string wrapping the character set of the output.</param>
+            <param name="removeDuplicates">Whether or not to sanitise the input string to remove duplicate characters</param>
+            <returns>
+            A random string containing only characters present in <paramref name="validCharacters"/> of the requested length
+            </returns>
+            <remarks>
+            WARNING: If 256 cannot evenly divide the number of characters (or number of distinct characters if <paramref name="removeDuplicates"/> is true) in <paramref name="validCharacters"/>,
+            then the entropy of the output is compromised. For best results, ensure that 256 evenly divides the number of valid characters.
+            </remarks>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateString(System.Int32,System.String,System.Boolean)">
+            <summary>
+            Generates a cryptographically secure random string
+            If a negative argument is received, it will be treated as it's equivalent positive value.
+            </summary>
+            <param name="length">The length of the output required</param>
+            <param name="validCharacters">A string wrapping the character set of the output.</param>
+            <param name="removeDuplicates">Whether or not to sanitise the input string to remove duplicate characters</param>
+            <returns>
+            A random string containing only characters present in <paramref name="validCharacters"/> of the requested length
+            </returns>
+            <remarks>
+            WARNING: If 256 cannot evenly divide the number of characters (or number of distinct characters if <paramref name="removeDuplicates"/> is true) in <paramref name="validCharacters"/>,
+            then the entropy of the output is compromised. For best results, ensure that 256 evenly divides the number of valid characters.
+            </remarks>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateString(System.UInt32,System.Char[],System.Boolean)">
+            <summary>
+            Generates a cryptographically secure random string
+            </summary>
+            <param name="length">The length of the output required</param>
+            <param name="validCharacters">The character set of the output</param>
+            <param name="removeDuplicates">Whether or not to sanitise the input string to remove duplicate characters</param>
+            <returns>
+            A random string containing only characters present in <paramref name="validCharacters"/> of the requested length
+            </returns>
+            <remarks>
+            WARNING: If 256 cannot evenly divide the number of characters (or number of distinct characters if <paramref name="removeDuplicates"/> is true) in <paramref name="validCharacters"/>,
+            then the entropy of the output is compromised. For best results, ensure that 256 evenly divides the number of valid characters.
+            </remarks>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.GenerateString(System.Int32,System.Char[],System.Boolean)">
+            <summary>
+            Generates a cryptographically secure random string
+            If a negative argument is received, it will be treated as it's equivalent positive value. 
+            </summary>
+            <param name="length">The length of the output required</param>
+            <param name="validCharacters">The character set of the output</param>
+            <param name="removeDuplicates">Whether or not to sanitise the input string to remove duplicate characters</param>
+            <returns>
+            A random string containing only characters present in <paramref name="validCharacters"/> of the requested length
+            </returns>
+            <remarks>
+            WARNING: If 256 cannot evenly divide the number of characters (or number of distinct characters if <paramref name="removeDuplicates"/> is true) in <paramref name="validCharacters"/>,
+            then the entropy of the output is compromised. For best results, ensure that 256 evenly divides the number of valid characters.
+            </remarks>
+        </member>
+        <member name="M:Luke.RNG.RNGesus.Dispose">
+            <summary>
+            Disposes the instance of RNGesus
+            </summary>
+        </member>
+    </members>
+</doc>

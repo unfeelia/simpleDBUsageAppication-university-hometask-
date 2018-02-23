@@ -1,0 +1,32 @@
+﻿<Window x:Class="dbApplication.ProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dbApplication"
+        mc:Ignorable="d"
+        Title="ProfileWindow" Height="900" Width="900">
+    <Grid>
+        <Label x:Name="label" Content="Email" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="submitChangesPassword" Content="Submit" HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top" Width="75" Click="submitChangesPassword_Click"/>
+        <Label x:Name="label_Copy" Content="New Pasword" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Repeat New Password" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="10,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="repeatedPasswordBox" HorizontalAlignment="Left" Height="23" Margin="10,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" Margin="10,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="currnetEmailBox" HorizontalAlignment="Left" Margin="136,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="116"/>
+        <ListBox x:Name="friendshipRequestsList" HorizontalAlignment="Left" Height="200" Margin="785,37,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="acceptFriendshipRequestButton" Content="Accept" HorizontalAlignment="Left" Margin="785,242,0,0" VerticalAlignment="Top" Width="97"/>
+        <ListBox x:Name="friendsList" HorizontalAlignment="Left" Height="200" Margin="683,37,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="removeFriendButton" Content="Remove" HorizontalAlignment="Left" Margin="683,242,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label x:Name="label1" Content="Requests" HorizontalAlignment="Left" Margin="785,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Friends" HorizontalAlignment="Left" Margin="683,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="submitChangesEmail" Content="Submit" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="75" Click="submitChangesEmail_Click"/>
+        <Label x:Name="label_Copy2" Content="Old Password " HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordOldBox" HorizontalAlignment="Left" Height="23" Margin="10,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>

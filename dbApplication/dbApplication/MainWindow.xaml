@@ -1,0 +1,29 @@
+﻿<Window x:Class="dbApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dbApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid Margin="0,-21,0,-3">
+        <Label x:Name="label" Content="Welcome to recipe data base. Please, Log in or Log up to continue work." HorizontalAlignment="Left" Margin="46,169,0,0" VerticalAlignment="Top" Height="50" Width="497" FontSize="14"/>
+        <TextBox x:Name="loginNameBox" HorizontalAlignment="Left" Height="23" Margin="45,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="loginName" Content="Name" HorizontalAlignment="Left" Margin="45,254,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="loginPasswordBox" HorizontalAlignment="Left" Height="23" Margin="45,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="loginPassword" Content="Password" HorizontalAlignment="Left" Margin="45,308,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="registrationNameBox" HorizontalAlignment="Left" Height="23" Margin="405,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="registrationName" Content="Name" HorizontalAlignment="Left" Margin="405,259,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="registrationPasswordBox" HorizontalAlignment="Left" Height="23" Margin="405,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="registrationPassword" Content="Password" HorizontalAlignment="Left" Margin="405,313,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="registrationButton" Content="Registration" HorizontalAlignment="Left" Margin="405,493,0,0" VerticalAlignment="Top" Width="137" Click="registrationButton_Click"/>
+        <TextBox x:Name="registrationRepeatedPasswordBox" HorizontalAlignment="Left" Height="23" Margin="405,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="registrationRepeatedPassword" Content="Repeat password" HorizontalAlignment="Left" Margin="405,367,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy4" Content="Log in" HorizontalAlignment="Left" Margin="45,224,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy5" Content="Log up" HorizontalAlignment="Left" Margin="405,224,0,0" VerticalAlignment="Top"/>
+        <Image Source="Resources/Images/entryWindowPicture.png" Margin="187,270,192,115" MinWidth="208" MinHeight="208" MaxWidth="208" MaxHeight="208" />
+        <Button x:Name="logInButton" Content="Sign In" HorizontalAlignment="Left" Margin="46,493,0,0" VerticalAlignment="Top" Width="136" Click="logInButton_Click"/>
+        <TextBox x:Name="registrationEmailBox" HorizontalAlignment="Left" Height="23" Margin="405,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <Label x:Name="registrationEmail" Content="Email" HorizontalAlignment="Left" Margin="405,421,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
